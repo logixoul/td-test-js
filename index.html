@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var brightness = 255;
+			function redraw() {
+				document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(" + brightness + ", " + brightness + ", " + brightness + ")";
+				brightness -= 10;
+			}
+			setTimeout(function() {
+				setInterval(redraw, 200);
+				}, 4000);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
